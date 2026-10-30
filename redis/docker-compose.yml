@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:latest
+    container_name: yak-redis
+    ports:
+      - "6379:6379"   # accessible to all ZeroTier systems
+    volumes:
+      - redis_data:/data
+    command: ["redis-server", "--appendonly", "yes", "--bind", "0.0.0.0"]
+    restart: always
+
+volumes:
+  redis_data:

@@ -1,0 +1,15 @@
+# Core Web Framework
+fastapi==0.115.0
+uvicorn==0.30.6
+
+# Redis client
+redis==5.0.7
+
+# Async HTTP client for replication and metadata fetching
+httpx==0.27.0
+
+# Async file operations for log writing
+aiofiles==24.1.0
+
+# Optional but recommended for debugging/logging
+python-dotenv==1.0.1
